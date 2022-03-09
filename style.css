@@ -211,7 +211,7 @@ header article p {
   width: 10%;
   right: 10%;
   bottom: 5%;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 
 }
 /* Section 4 */
@@ -252,6 +252,9 @@ header article p {
   letter-spacing: 0.02em;
   border-radius: 50px;
   padding: 15px 40px;
+}
+.s-5-item-mobile{
+  display: none;
 }
 
 /* Section 6 */
@@ -343,7 +346,7 @@ footer .f-b-3 {
 
 @media (max-width: 900px) {
   header article h1 {
-    width: 60%;
+   
     font-size: 28px;
   }
   header article {
@@ -400,6 +403,10 @@ footer .f-b-3 {
   .s-3-item {
     width: 100%;
   }
+  .s-3-item p {
+    max-width: 80%;
+
+  }
   .s-3 article img {
 
  
@@ -433,6 +440,9 @@ footer .f-b-3 {
   }
   .s-5-item {
     width: 100%;
+  }
+  .s-5-item-mobile{
+    display: block;
   }
 
   /* Section 6 */
