@@ -386,10 +386,12 @@ footer .f-b-3 {
 
   .s-5-item ul li::before {
     content: "✦";
-    left: -20px;
     padding-right: 8px;
     color: #ff1dc0;
+    
     position: absolute;
+    left: -20px;
+
   }
   .s-5-item {
     width: 100%;
