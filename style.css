@@ -15,7 +15,7 @@ body {
 header {
   background-image: url("/img/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 li {
   list-style: none;
@@ -38,6 +38,27 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.nav-head{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+.nav-head .adnsu{
+  width: 165px;
+  height: 30px;
+}
+.mobile-logo{
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.logo-block{
+  display: none;
+
+}
 .nav-text {
   display: flex;
   gap: 60px;
@@ -49,6 +70,7 @@ nav {
 .n-t-p2 {
   font-weight: 600;
 }
+
 
 /* Article */
 header article {
@@ -186,9 +208,11 @@ header article p {
 }
 .s-3 article img {
   position: absolute;
-  width: 7%;
-  right: 200px;
-  top: -105px;
+  width: 10%;
+  right: 10%;
+  bottom: 5%;
+  margin-bottom: -20px;
+
 }
 /* Section 4 */
 .s-4 {
@@ -328,6 +352,23 @@ footer .f-b-3 {
   header article p {
     width: 100%;
   }
+  /* Navbar */
+  .logo-block{
+    display: block;
+  }
+  nav{
+    justify-content: flex-start;
+
+  }
+  .nav-head img.logo-1{
+    display: flex;
+  }
+  .logo-none{
+    display: none;
+  }
+
+
+  /* Section 1 */
   .s-1 article {
     display: flex;
     flex-direction: column;
@@ -360,9 +401,8 @@ footer .f-b-3 {
     width: 100%;
   }
   .s-3 article img {
-    width: 25%;
-    right: 70px;
-    top: -143px;
+
+ 
   }
   /* Section 4 */
   .s-4 article h1 {
@@ -386,9 +426,7 @@ footer .f-b-3 {
 
   .s-5-item ul li::before {
     content: "✦";
-    padding-right: 8px;
     color: #ff1dc0;
-    
     position: absolute;
     left: -20px;
 
@@ -439,6 +477,5 @@ footer .f-b-3 {
   .footer-block .f-b-1 {
     flex-direction: row;
   }
-  .footer-block .f-b-3 {
-  }
+  
 }
