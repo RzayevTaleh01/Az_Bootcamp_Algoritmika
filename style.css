@@ -238,6 +238,16 @@ header article p {
 .s-5-item h1 {
   margin-bottom: 75px;
 }
+.s-5-item-mobile-select{
+  padding: 20px 25px;
+  background-color: transparent;
+  color: #30FFCD;
+  border-color: #30FFCD;
+  border-width: 2px;
+  font-weight: bold;
+  display: none;
+}
+
 .s-5 ul {
   display: flex;
   flex-direction: column;
@@ -427,6 +437,9 @@ footer .f-b-3 {
   .s-5-block .s-5-item-none {
     display: none;
   }
+  .s-5 ul{
+    margin-left: 40px;
+  }
   .s-5-item ul {
     position: relative;
   }
@@ -441,8 +454,15 @@ footer .f-b-3 {
   .s-5-item {
     width: 100%;
   }
+  .s-5-item h1 {
+    margin-bottom: 25px;
+  }
   .s-5-item-mobile{
     display: block;
+  }
+  .s-5-item-mobile-select{
+    display: block;
+    margin-bottom: 35px;
   }
 
   /* Section 6 */
