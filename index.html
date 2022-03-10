@@ -12,14 +12,30 @@
     <header>
       <nav>
         <div class="nav-head">
-          <img class="logo-1" src="/img/logo/Group 636.png" alt="">
+          <img class="logo-1" src="/img/logo/bootcamp.svg" alt="">
           <img class="logo-none" src="/img/logo/logo_AZ.svg" alt="">
-          <img class="adnsu logo-none" src="/img/logo/Group 7837.png" alt="">
+          <img class="adnsu logo-none" src="/img/logo/Group 7837.svg" alt="">
         </div>
         <div class="nav-text logo-none">
           <p class="n-t-p1">#codeforfuture</p>
           <p class="n-t-p2">+99 (470) 201-11-79</p>
         </div>
+
+        <!-- Toggle Menu -SideNav -->
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="toggle"> 
+        <span class="sidenav-span" onclick="openNav()"
+          >&#9776;</span
+        ></div> 
       </nav>
       <article class="container">
         <h1>Tələbələr üçün IT-kurslar</h1>
@@ -31,9 +47,8 @@
         <p class="n-a-p2">BAŞLAYIR – 14 FEVRALDA</p>
 
         <div class="mobile-logo">
-         
+          <img class="logo-block" src="/img/logo/Group 7837.svg" alt="">         
           <img class="logo-block" src="/img/logo/logo_AZ.svg" alt="">
-          <img class="logo-block" src="/img/logo/Group 7837.png" alt="">
         
         </div>
       </article>
@@ -130,19 +145,15 @@
             </p>
           </div>
           <div class="s-4-item">
-            <h2>İnkişaf Hard-skills</h2>
+            <h2>Soft-skills və işədüzəlməyə hazırlıq</h2>
             <p>
-              Mühazirələr, təcrübə, məsələ və keyslərin həlli. Hamısı ofline
-              formatda Neft və Sənaye Universitetinin meydançasında. Öz real
-              təcrübəsini bölüşəcək təcrübə müəllimi ilə çiyin-çiyinə.
+              Treninqlər və master-klaslar, müsahibələrə hazırlıq. Çox qiymətli kommunikasiya təcrübəsi və IT sahəsinə uyğunlaşma.
             </p>
           </div>
           <div class="s-4-item">
-            <h2>İnkişaf Hard-skills</h2>
+            <h2>Dəstək və motivasiya</h2>
             <p>
-              Mühazirələr, təcrübə, məsələ və keyslərin həlli. Hamısı ofline
-              formatda Neft və Sənaye Universitetinin meydançasında. Öz real
-              təcrübəsini bölüşəcək təcrübə müəllimi ilə çiyin-çiyinə.
+              Sən hər gün sənin kimi yeni peşəyə can atan insanlarla birgə mühitdə təhsil alacaqsan. Burada qalib və məğlub yoxdur, daha çox bilmək və bacarmaq arzusu vardır. 
             </p>
           </div>
         </div>
@@ -346,5 +357,16 @@
       </div> 
       </div>
     </footer>
+
+    <!-- JavaScript Kodlar -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>
