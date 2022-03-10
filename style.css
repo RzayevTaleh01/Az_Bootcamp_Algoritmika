@@ -38,6 +38,26 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
+.nav-head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+}
+.nav-head .adnsu {
+  width: 165px;
+  height: 30px;
+}
+.mobile-logo {
+  margin-top: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+}
+.logo-block {
+  display: none;
+}
 .nav-text {
   display: flex;
   gap: 60px;
@@ -48,6 +68,44 @@ nav {
 }
 .n-t-p2 {
   font-weight: 600;
+}
+
+/* Navbar SideNav */
+.sidenav-span{
+  display: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* Article */
@@ -105,6 +163,11 @@ header article p {
   height: 48px;
   background-color: #ff1dc0;
   border-radius: 48px;
+  transition: 0.3s ease 0s;
+}
+.s-1 article a button:hover,
+.s-2 article a button:hover {
+  background-color: #382459;
 }
 .s-2 article a button {
   display: none;
@@ -114,8 +177,7 @@ header article p {
   margin-bottom: 100px;
   color: #382459;
 }
-.s-2-block,
-.s-4-block {
+.s-2-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -186,9 +248,10 @@ header article p {
 }
 .s-3 article img {
   position: absolute;
-  width: 7%;
-  right: 200px;
-  top: -105px;
+  width: 10%;
+  right: 10%;
+  bottom: 5%;
+  margin-bottom: -10px;
 }
 /* Section 4 */
 .s-4 {
@@ -198,6 +261,9 @@ header article p {
 }
 .s-4-block {
   margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
 }
 
 /* Section 5 */
@@ -214,6 +280,16 @@ header article p {
 .s-5-item h1 {
   margin-bottom: 75px;
 }
+.s-5-item-mobile-select {
+  padding: 20px 25px;
+  background-color: transparent;
+  color: #30ffcd;
+  border-color: #30ffcd;
+  border-width: 2px;
+  font-weight: bold;
+  display: none;
+}
+
 .s-5 ul {
   display: flex;
   flex-direction: column;
@@ -228,6 +304,10 @@ header article p {
   letter-spacing: 0.02em;
   border-radius: 50px;
   padding: 15px 40px;
+  cursor: pointer;
+}
+.s-5-item-mobile {
+  display: none;
 }
 
 /* Section 6 */
@@ -285,6 +365,12 @@ header article p {
   width: 224px;
   height: 48px;
   background-color: #ff1dc0;
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+.s-7 a button:hover {
+  background-color: #fff;
+  color: #382459;
 }
 footer .footer-block {
   color: #382459;
@@ -319,7 +405,6 @@ footer .f-b-3 {
 
 @media (max-width: 900px) {
   header article h1 {
-    width: 60%;
     font-size: 28px;
   }
   header article {
@@ -328,6 +413,41 @@ footer .f-b-3 {
   header article p {
     width: 100%;
   }
+  /* Navbar */
+  .logo-block {
+    display: block;
+  }
+  nav {
+    justify-content: flex-start;
+  }
+  .nav-head img.logo-1 {
+    display: flex;
+  }
+  .logo-none {
+    display: none;
+  }
+
+  /* SideNav Toggle Menu */
+  .sidenav-span{
+    display: block;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    right: 15%;
+    top: 30px;
+    width: 24px;
+    height: 20px;
+  } 
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  /* Section 1 */
   .s-1 article {
     display: flex;
     flex-direction: column;
@@ -359,10 +479,11 @@ footer .f-b-3 {
   .s-3-item {
     width: 100%;
   }
+  .s-3-item p {
+    max-width: 80%;
+  }
   .s-3 article img {
-    width: 25%;
-    right: 70px;
-    top: -143px;
+    width: 15%;
   }
   /* Section 4 */
   .s-4 article h1 {
@@ -371,6 +492,7 @@ footer .f-b-3 {
   .s-4-block {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   .s-4-item {
     width: 100%;
@@ -380,19 +502,31 @@ footer .f-b-3 {
   .s-5-block .s-5-item-none {
     display: none;
   }
+  .s-5 ul {
+    margin-left: 40px;
+  }
   .s-5-item ul {
     position: relative;
   }
 
   .s-5-item ul li::before {
     content: "✦";
-    left: -20px;
-    padding-right: 8px;
     color: #ff1dc0;
     position: absolute;
+    left: -20px;
   }
   .s-5-item {
     width: 100%;
+  }
+  .s-5-item h1 {
+    margin-bottom: 25px;
+  }
+  .s-5-item-mobile {
+    display: block;
+  }
+  .s-5-item-mobile-select {
+    display: block;
+    margin-bottom: 35px;
   }
 
   /* Section 6 */
@@ -436,7 +570,5 @@ footer .f-b-3 {
   }
   .footer-block .f-b-1 {
     flex-direction: row;
-  }
-  .footer-block .f-b-3 {
   }
 }
